@@ -1,0 +1,25 @@
+{
+    "name": "userdiscounts/package",
+    "description": "A reusable Laravel package for user-level discounts with deterministic stacking",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "UserDiscounts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UserDiscounts\\DiscountServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
